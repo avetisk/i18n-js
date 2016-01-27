@@ -477,7 +477,7 @@
       name = placeholder.replace(this.placeholder, "$1");
 
       if (this.isSet(options[name])) {
-        value = options[name].toString().replace(/\$/gm, "$$");
+        value = options[name].toString().replace(/\$/gm, "$$$$");
       } else if (name in options) {
         value = this.nullPlaceholder(placeholder, message, options);
       } else {
